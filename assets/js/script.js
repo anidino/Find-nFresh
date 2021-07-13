@@ -1,5 +1,6 @@
 
 
+
 var zipCode = document.getElementById("zipCode");
 var googleKey = "AIzaSyD6qU4Fdx74Tp9Z0lcCt26TIjLK8iC1uBk";
 var mapContainer = document.getElementById("mapContainer");
@@ -33,7 +34,7 @@ function getRecipe() {
     "https://api.spoonacular.com/recipes/complexSearch?query=" +
       searchRecipe +
       "&apiKey=" +
-      spoonKey1
+      spoonKey2
   )
     .then(function (response) {
       return response.json();
@@ -182,7 +183,7 @@ function getRecipeData(id, id2, id3) {
     "https://api.spoonacular.com/recipes/informationBulk?ids=" +
       id +
       "&apiKey=" +
-      spoonKey1
+      spoonKey2
   )
     .then(function (response) {
       return response.json();
@@ -206,7 +207,7 @@ function getRecipeData(id, id2, id3) {
     "https://api.spoonacular.com/recipes/informationBulk?ids=" +
       id2 +
       "&apiKey=" +
-      spoonKey1
+      spoonKey2
   )
     .then(function (response) {
       return response.json();
@@ -230,7 +231,7 @@ function getRecipeData(id, id2, id3) {
     "https://api.spoonacular.com/recipes/informationBulk?ids=" +
       id3 +
       "&apiKey=" +
-      spoonKey1
+      spoonKey2
   )
     .then(function (response) {
       return response.json();
